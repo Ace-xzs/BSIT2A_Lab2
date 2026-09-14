@@ -1,0 +1,20 @@
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --accent:#2b7cff;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#111;margin:0;padding:32px;display:flex;align-items:center;justify-content:center;min-height:100vh}
+.container{width:100%;max-width:720px;background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 24px rgba(16,24,40,.08)}
+form h1{margin:0 0 18px;font-size:22px}
+.row{display:flex;gap:12px}
+.field{display:flex;flex-direction:column;margin-bottom:12px;flex:1}
+.field label{font-size:13px;margin-bottom:6px;color:var(--muted)}
+.field input[type="text"],.field input[type="email"],.field input[type="password"],.field input[type="tel"],.field input[type="date"]{padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+.inline-radios label{margin-right:12px;font-size:14px}
+.checkbox label{display:flex;align-items:center;gap:8px}
+.error{color:#b91c1c;font-size:13px;height:18px;margin-top:6px}
+.btn{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:15px;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.success{color:#065f46;margin-top:12px}
